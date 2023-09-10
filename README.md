@@ -11,5 +11,5 @@ Tech Stacks used:
 </ul>
 
 Team Members:
-Ankita Ghosh
+Ankita Ghosh <br/>
 Prashareet Choudhury
