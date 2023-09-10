@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+body{
+  background-color: rgb(23, 49, 27);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;;
+}
+.contact-container{
+  position: relative;
+
+  height: 30vh;
+  width: 100vw;
+  background-color: rgba(59, 199, 89, 0.929);
+}
+
+.contact-heading{
+  position: absolute;
+  top: 23%;
+  left: 3%;
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  transform: translateY(-50%);
+  transition: left 0.5s ease-in-out;
+}
+.slideLeft{
+  left: 0;
+}
+.info{
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
+.info-heading{
+  font-family: 'Roboto', sans-serif;
+}
+/* for caraousel
+  */
+.caraousel{
+  position: relative;
+}
+.caraousel---item{
+  
+  height: 600px;
+  background-color: rgba(41, 177, 107, 0.877);
+  background-size: cover;
+  font-size: 3vw;
+  color: rgb(224, 219, 219);
+  font-family: 'Roboto', sans-serif;
+  padding: 2em;
+  display: none;
+
+}
+
+.btn-primary{ 
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: rgb(243, 243, 243);
+  font-size: 1.3rem;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px;
+  bottom: 4vh;
+  background-color: transparent;
+  cursor: pointer;  
+}
+.btn-primary:hover{
+  background-color: rgb(222, 231, 238);
+}
+.caraousel-info{
+  position: absolute;
+  bottom: 6vh;
+}
+
+.caraousel---nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px 0;
+    text-align: center;
+    width: 100%;
+    
+}
+.caraousel---button{
+  height: 10px;
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.256);
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.caraousel---button:hover{
+  background-color: rgba(255, 255, 255, 0.656)
+}
+.caraousel---item---selected{
+  display: block;
+}
+.caraousel---button---selected{
+  background-color: rgba(255, 255, 255, 0.656)
+}
+#cheetah{
+  background-image: url(./images/cheetah-wildlife-1.webp)
+
+}
+#lion{
+  background-image: url(./images/lion.webp);
+}
+#green{
+  background-image: url(./images/green-eco.jpg);
+}
+
+/* 
+  for cards: */
+
+  .card {
+    width: 300px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    background-color: #d3cccc;
+    border-radius: 5px;
+    font-family:'Roboto', sans-serif;
+    margin-top: 200px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.card p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.card-container{
+  display: flex;
+  justify-content: space-around;
+}
+.card-info{
+  flex: 1;
+  padding-left: 20px;
+}
+.card-button{
+  padding: 10px;
+  background-color: rgb(89, 227, 89);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  border: 0;
+
+}
+#research{
+  margin-top: 300px;
+}
+#ecology{
+  margin-top: 300px;
+}
+/* Initial style for elements to be faded in */
+.fade-in-element {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  transform: translateY(20px); /* Optional: Add a slight vertical translation */
+}
+
+/* Style for elements when they are visible in the viewport */
+.fade-in-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contact--us{
+  background-color: #ccc;
+}
+header {
+    background-color: #163522;
+    ;
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.contact-form {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  display: inline-block;
+  text-align: left;
+  margin-left: 37.5vw;
+  margin-bottom: 10vh;
+}
+
+.contact-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+
+}
+
+.contact-form button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #258cd1;
+}
+
+/* Style the header and navigation menu (reuse styles from other pages) */
+/* ... */
+
+/* Style the footer (reuse styles from other pages) */
+/* ... */
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+/* Style the contact information section */
+.contact-info {
+  background-color: #52a76d;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #010102;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
